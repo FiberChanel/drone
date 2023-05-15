@@ -1,0 +1,15 @@
+---
+spring:
+  application:
+    name: drone-app
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drone
+    username: postgres
+    password: postgres
+server:
+  error:
+    include-message: always
+
+schedule:
+  battery_audit:
+    periodInSecond: 10000
